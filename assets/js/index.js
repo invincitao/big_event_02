@@ -1,7 +1,7 @@
 $(function () {
     // console.log(1);
     // 1.获取用户信息
-    getuserInfo();
+    getUserInfo();
 
 
     // 2.退出登录,销毁token，回到login页面
@@ -18,7 +18,7 @@ $(function () {
     })
 })
 // 在碗面封装函数，方便后面调用
-function getuserInfo() {
+function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
         type: 'GET',
